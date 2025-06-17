@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SistemaBiblioteca
+﻿namespace SistemaBiblioteca
 {
     internal class AlunoGraduacao : Usuario
     {
-        public AlunoGraduacao(string codigo, string nome) : base(codigo, nome)
+        private readonly int _limiteLivrosEmprestados = 2;
+
+        public AlunoGraduacao(string codigo, string nome) : base(codigo, nome, new EmprestimoAluno())
         {
+
         }
+
     }
 }

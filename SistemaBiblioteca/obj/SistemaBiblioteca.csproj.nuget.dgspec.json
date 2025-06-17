@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Saulo\\source\\repos\\SistemaBiblioteca\\SistemaBiblioteca\\SistemaBiblioteca.csproj": {}
+    "C:\\Users\\sgomes\\OneDrive - Universidade Federal da Bahia\\Programming\\C#\\source\\repos\\SistemaBiblioteca\\SistemaBiblioteca\\SistemaBiblioteca.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Saulo\\source\\repos\\SistemaBiblioteca\\SistemaBiblioteca\\SistemaBiblioteca.csproj": {
+    "C:\\Users\\sgomes\\OneDrive - Universidade Federal da Bahia\\Programming\\C#\\source\\repos\\SistemaBiblioteca\\SistemaBiblioteca\\SistemaBiblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Saulo\\source\\repos\\SistemaBiblioteca\\SistemaBiblioteca\\SistemaBiblioteca.csproj",
+        "projectUniqueName": "C:\\Users\\sgomes\\OneDrive - Universidade Federal da Bahia\\Programming\\C#\\source\\repos\\SistemaBiblioteca\\SistemaBiblioteca\\SistemaBiblioteca.csproj",
         "projectName": "SistemaBiblioteca",
-        "projectPath": "C:\\Users\\Saulo\\source\\repos\\SistemaBiblioteca\\SistemaBiblioteca\\SistemaBiblioteca.csproj",
-        "packagesPath": "C:\\Users\\Saulo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Saulo\\source\\repos\\SistemaBiblioteca\\SistemaBiblioteca\\obj\\",
+        "projectPath": "C:\\Users\\sgomes\\OneDrive - Universidade Federal da Bahia\\Programming\\C#\\source\\repos\\SistemaBiblioteca\\SistemaBiblioteca\\SistemaBiblioteca.csproj",
+        "packagesPath": "C:\\Users\\sgomes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sgomes\\OneDrive - Universidade Federal da Bahia\\Programming\\C#\\source\\repos\\SistemaBiblioteca\\SistemaBiblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Saulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sgomes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -25,7 +25,8 @@
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -43,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -64,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
