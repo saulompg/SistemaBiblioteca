@@ -1,29 +1,44 @@
-C:\Users\Saulo\source\repos\SistemaBiblioteca\SistemaBiblioteca\bin\Debug\net8.0\SistemaBiblioteca.exe
-C:\Users\Saulo\source\repos\SistemaBiblioteca\SistemaBiblioteca\bin\Debug\net8.0\SistemaBiblioteca.deps.json
-C:\Users\Saulo\source\repos\SistemaBiblioteca\SistemaBiblioteca\bin\Debug\net8.0\SistemaBiblioteca.runtimeconfig.json
-C:\Users\Saulo\source\repos\SistemaBiblioteca\SistemaBiblioteca\bin\Debug\net8.0\SistemaBiblioteca.dll
-C:\Users\Saulo\source\repos\SistemaBiblioteca\SistemaBiblioteca\bin\Debug\net8.0\SistemaBiblioteca.pdb
-C:\Users\Saulo\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\SistemaBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Saulo\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\SistemaBiblioteca.AssemblyInfoInputs.cache
-C:\Users\Saulo\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\SistemaBiblioteca.AssemblyInfo.cs
-C:\Users\Saulo\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\SistemaBiblioteca.csproj.CoreCompileInputs.cache
-C:\Users\Saulo\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\SistemaBiblioteca.dll
-C:\Users\Saulo\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\refint\SistemaBiblioteca.dll
-C:\Users\Saulo\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\SistemaBiblioteca.pdb
-C:\Users\Saulo\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\SistemaBiblioteca.genruntimeconfig.cache
-C:\Users\Saulo\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\ref\SistemaBiblioteca.dll
-C:\Users\sgomes\OneDrive - Universidade Federal da Bahia\Programming\C#\source\repos\SistemaBiblioteca\SistemaBiblioteca\bin\Debug\net8.0\SistemaBiblioteca.exe
-C:\Users\sgomes\OneDrive - Universidade Federal da Bahia\Programming\C#\source\repos\SistemaBiblioteca\SistemaBiblioteca\bin\Debug\net8.0\SistemaBiblioteca.deps.json
-C:\Users\sgomes\OneDrive - Universidade Federal da Bahia\Programming\C#\source\repos\SistemaBiblioteca\SistemaBiblioteca\bin\Debug\net8.0\SistemaBiblioteca.runtimeconfig.json
-C:\Users\sgomes\OneDrive - Universidade Federal da Bahia\Programming\C#\source\repos\SistemaBiblioteca\SistemaBiblioteca\bin\Debug\net8.0\SistemaBiblioteca.dll
-C:\Users\sgomes\OneDrive - Universidade Federal da Bahia\Programming\C#\source\repos\SistemaBiblioteca\SistemaBiblioteca\bin\Debug\net8.0\SistemaBiblioteca.pdb
-C:\Users\sgomes\OneDrive - Universidade Federal da Bahia\Programming\C#\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\SistemaBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\sgomes\OneDrive - Universidade Federal da Bahia\Programming\C#\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\SistemaBiblioteca.AssemblyInfoInputs.cache
-C:\Users\sgomes\OneDrive - Universidade Federal da Bahia\Programming\C#\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\SistemaBiblioteca.AssemblyInfo.cs
-C:\Users\sgomes\OneDrive - Universidade Federal da Bahia\Programming\C#\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\SistemaBiblioteca.csproj.CoreCompileInputs.cache
-C:\Users\sgomes\OneDrive - Universidade Federal da Bahia\Programming\C#\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\SistemaBiblioteca.sourcelink.json
-C:\Users\sgomes\OneDrive - Universidade Federal da Bahia\Programming\C#\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\SistemaBiblioteca.dll
-C:\Users\sgomes\OneDrive - Universidade Federal da Bahia\Programming\C#\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\refint\SistemaBiblioteca.dll
-C:\Users\sgomes\OneDrive - Universidade Federal da Bahia\Programming\C#\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\SistemaBiblioteca.pdb
-C:\Users\sgomes\OneDrive - Universidade Federal da Bahia\Programming\C#\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\SistemaBiblioteca.genruntimeconfig.cache
-C:\Users\sgomes\OneDrive - Universidade Federal da Bahia\Programming\C#\source\repos\SistemaBiblioteca\SistemaBiblioteca\obj\Debug\net8.0\ref\SistemaBiblioteca.dll
+C:/Users/Saulo/source/repos/SistemaBiblioteca/SistemaBiblioteca/bin/Debug/net8.0/SistemaBiblioteca.exe
+C:/Users/Saulo/source/repos/SistemaBiblioteca/SistemaBiblioteca/bin/Debug/net8.0/SistemaBiblioteca.deps.json
+C:/Users/Saulo/source/repos/SistemaBiblioteca/SistemaBiblioteca/bin/Debug/net8.0/SistemaBiblioteca.runtimeconfig.json
+C:/Users/Saulo/source/repos/SistemaBiblioteca/SistemaBiblioteca/bin/Debug/net8.0/SistemaBiblioteca.dll
+C:/Users/Saulo/source/repos/SistemaBiblioteca/SistemaBiblioteca/bin/Debug/net8.0/SistemaBiblioteca.pdb
+C:/Users/Saulo/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Saulo/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.AssemblyInfoInputs.cache
+C:/Users/Saulo/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.AssemblyInfo.cs
+C:/Users/Saulo/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.csproj.CoreCompileInputs.cache
+C:/Users/Saulo/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.dll
+C:/Users/Saulo/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/refint/SistemaBiblioteca.dll
+C:/Users/Saulo/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.pdb
+C:/Users/Saulo/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.genruntimeconfig.cache
+C:/Users/Saulo/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/ref/SistemaBiblioteca.dll
+C:/Users/sgomes/OneDrive - Universidade Federal da Bahia/Programming/C#/source/repos/SistemaBiblioteca/SistemaBiblioteca/bin/Debug/net8.0/SistemaBiblioteca.exe
+C:/Users/sgomes/OneDrive - Universidade Federal da Bahia/Programming/C#/source/repos/SistemaBiblioteca/SistemaBiblioteca/bin/Debug/net8.0/SistemaBiblioteca.deps.json
+C:/Users/sgomes/OneDrive - Universidade Federal da Bahia/Programming/C#/source/repos/SistemaBiblioteca/SistemaBiblioteca/bin/Debug/net8.0/SistemaBiblioteca.runtimeconfig.json
+C:/Users/sgomes/OneDrive - Universidade Federal da Bahia/Programming/C#/source/repos/SistemaBiblioteca/SistemaBiblioteca/bin/Debug/net8.0/SistemaBiblioteca.dll
+C:/Users/sgomes/OneDrive - Universidade Federal da Bahia/Programming/C#/source/repos/SistemaBiblioteca/SistemaBiblioteca/bin/Debug/net8.0/SistemaBiblioteca.pdb
+C:/Users/sgomes/OneDrive - Universidade Federal da Bahia/Programming/C#/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/sgomes/OneDrive - Universidade Federal da Bahia/Programming/C#/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.AssemblyInfoInputs.cache
+C:/Users/sgomes/OneDrive - Universidade Federal da Bahia/Programming/C#/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.AssemblyInfo.cs
+C:/Users/sgomes/OneDrive - Universidade Federal da Bahia/Programming/C#/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.csproj.CoreCompileInputs.cache
+C:/Users/sgomes/OneDrive - Universidade Federal da Bahia/Programming/C#/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.sourcelink.json
+C:/Users/sgomes/OneDrive - Universidade Federal da Bahia/Programming/C#/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.dll
+C:/Users/sgomes/OneDrive - Universidade Federal da Bahia/Programming/C#/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/refint/SistemaBiblioteca.dll
+C:/Users/sgomes/OneDrive - Universidade Federal da Bahia/Programming/C#/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.pdb
+C:/Users/sgomes/OneDrive - Universidade Federal da Bahia/Programming/C#/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.genruntimeconfig.cache
+C:/Users/sgomes/OneDrive - Universidade Federal da Bahia/Programming/C#/source/repos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/ref/SistemaBiblioteca.dll
+/home/saulompg/projetos/SistemaBiblioteca/SistemaBiblioteca/bin/Debug/net8.0/SistemaBiblioteca
+/home/saulompg/projetos/SistemaBiblioteca/SistemaBiblioteca/bin/Debug/net8.0/SistemaBiblioteca.deps.json
+/home/saulompg/projetos/SistemaBiblioteca/SistemaBiblioteca/bin/Debug/net8.0/SistemaBiblioteca.runtimeconfig.json
+/home/saulompg/projetos/SistemaBiblioteca/SistemaBiblioteca/bin/Debug/net8.0/SistemaBiblioteca.dll
+/home/saulompg/projetos/SistemaBiblioteca/SistemaBiblioteca/bin/Debug/net8.0/SistemaBiblioteca.pdb
+/home/saulompg/projetos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+/home/saulompg/projetos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.AssemblyInfoInputs.cache
+/home/saulompg/projetos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.AssemblyInfo.cs
+/home/saulompg/projetos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.csproj.CoreCompileInputs.cache
+/home/saulompg/projetos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.sourcelink.json
+/home/saulompg/projetos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.dll
+/home/saulompg/projetos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/refint/SistemaBiblioteca.dll
+/home/saulompg/projetos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.pdb
+/home/saulompg/projetos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/SistemaBiblioteca.genruntimeconfig.cache
+/home/saulompg/projetos/SistemaBiblioteca/SistemaBiblioteca/obj/Debug/net8.0/ref/SistemaBiblioteca.dll
