@@ -2,11 +2,24 @@
 
 namespace ProjetoBiblioteca.entidade
 {
-    internal class Exemplar
+    public class Exemplar
     {
+        public string Codigo { get; }
         public Livro Livro { get; }
-        public Emprestimo? Emprestimo { get; set; }
+        public bool Disponivel { get; private set; } = true;
+        public Emprestimo? Emprestimo { get; private set; }
 
-        public Exemplar(Livro livro) => Livro = livro;
+        public Exemplar(string codigo, Livro livro)
+        {
+            Codigo = codigo;
+            Livro = livro;
+        }
+
+        public void EmprestarExemplar(Usuario usuario)
+        {
+            Emprestimo emprestimo = new Emprestimo(usuario, this);
+            usuario.AdicionarEmprestimo(emprestimo);
+            Disponivel = false;
+        }
     }
 }

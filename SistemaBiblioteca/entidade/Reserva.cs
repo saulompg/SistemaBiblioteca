@@ -1,6 +1,6 @@
 ﻿namespace ProjetoBiblioteca.entidade
 {
-    internal class Reserva
+    public class Reserva
     {
         public Usuario Usuario { get; }
         public Livro Livro { get; }

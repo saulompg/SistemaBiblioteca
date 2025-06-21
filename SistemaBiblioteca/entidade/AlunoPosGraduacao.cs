@@ -4,12 +4,9 @@ namespace ProjetoBiblioteca.entidade
 {
     internal class AlunoPosGraduacao : Usuario
     {
-        private readonly int _limiteLivrosEmprestados = 3;
-
-        public AlunoPosGraduacao(string codigo, string nome) : base(codigo, nome, new EmprestimoAluno())
-        {
-
-        }
-
+        public AlunoPosGraduacao(string codigo, string nome) : base(codigo, nome) { }
+        public override int PrazoEmprestimo { get; } = 5;
+        public override IRegraEmprestimoStrategy RegraEmprestimo { get; } = 
+            new AlunoPosRegraEmprestimo();
     }
 }
