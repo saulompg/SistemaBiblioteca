@@ -14,6 +14,7 @@
             DataEmprestimo = DateTime.Now;
             DataDevolucao = DataEmprestimo.AddDays(Usuario.PrazoEmprestimo);
         }
-        
+
+        public void DevolverExemplar() => Exemplar.Devolver();
     }
 }

@@ -15,11 +15,16 @@ namespace ProjetoBiblioteca.entidade
             Livro = livro;
         }
 
-        public void EmprestarExemplar(Usuario usuario)
+        public void Emprestar(Usuario usuario)
         {
             Emprestimo emprestimo = new Emprestimo(usuario, this);
             usuario.AdicionarEmprestimo(emprestimo);
             Disponivel = false;
+        }
+
+        public void Devolver()
+        {
+            Disponivel = true;
         }
     }
 }

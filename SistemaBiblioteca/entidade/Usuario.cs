@@ -20,10 +20,32 @@ namespace ProjetoBiblioteca.entidade
             EmprestimosPassados = [];
             Reservas = [];
         }
-        public void AdicionarEmprestimo(Emprestimo emprestimo) => EmprestimosAtuais.Add(emprestimo);
+        public void AdicionarEmprestimo(Emprestimo emprestimo)
+        {
+            Reserva? reserva = Reservas.FirstOrDefault(r => r.Livro == emprestimo.Exemplar.Livro);
+            if (reserva != null) Reservas.Remove(reserva);
+            EmprestimosAtuais.Add(emprestimo);
+        }
 
-        public void AdicionarReserva(Reserva reserva) => Reservas.Add(reserva);
+        public void ReservarLivro(Livro livro)
+        {
+            Reserva reserva = new Reserva(this, livro);
+            livro.Reservas.Add(reserva);
+            Reservas.Add(reserva);
+        }
 
-        public override string ToString() => Nome;
+        public void DevolverLivro(Livro livro, out string output)
+        {
+            Emprestimo? emprestimo = EmprestimosAtuais.FirstOrDefault(e => e.Exemplar.Livro == livro);
+            if (emprestimo == null)
+            {
+                output = $"O livro '{livro.Titulo}' não está cadastrado com este usuário.";
+                return;
+            }
+            emprestimo.DevolverExemplar();
+            EmprestimosAtuais.Remove(emprestimo);
+            EmprestimosPassados.Add(emprestimo);
+            output = $"O Livro '{livro.Titulo}' foi devolvido por {Nome}";
+        }
     }
 }

@@ -15,13 +15,13 @@ namespace ProjetoBiblioteca
         public Usuario BuscarUsuarioPorCodigo(string codigo)
         {
             return Usuarios.TryGetValue(codigo, out var usuario) ? usuario
-                : throw new InvalidOperationException($"Código {codigo} não encontrado");
+                : throw new InvalidOperationException($"Código [{codigo}] não encontrado");
         }
 
         public Livro BuscarLivroPorCodigo(string codigo)
         {
             return Livros.TryGetValue(codigo, out var livro) ? livro
-                : throw new InvalidOperationException($"Código {codigo} não encontrado");
+                : throw new InvalidOperationException($"Código [{codigo}] não encontrado");
         }
 
         public void AdicionarUsuario(Usuario usuario) => Usuarios[usuario.Codigo] = usuario;

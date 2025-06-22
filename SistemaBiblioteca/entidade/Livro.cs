@@ -10,15 +10,16 @@ namespace ProjetoBiblioteca.entidade
         public string[] Autores { get; }
         public string Edicao { get; }
         public int AnoPublicacao { get; }
-        public List<Exemplar> Exemplares { get; }
-        public List<Reserva> Reservas { get; }
-        public Livro(string codigo, string titulo, string editora)
+        public List<Exemplar> Exemplares { get; } = new();
+        public List<Reserva> Reservas { get; } = new();
+        public Livro(string codigo, string titulo, string editora, string[] autores, string edicao, int anoPublicacao)
         {
             Codigo = codigo;
             Titulo = titulo;
             Editora = editora;
-            Exemplares = new List<Exemplar>();
-            Reservas = new List<Reserva>();
+            Autores = autores;
+            Edicao = edicao;
+            AnoPublicacao = anoPublicacao;
         }
 
         public void AdicionarExemplar(string codigoExemplar)
