@@ -1,3 +1,5 @@
+using ProjetoBiblioteca.entidade;
+
 namespace ProjetoBiblioteca.command;
 
 public class DevolverCommand : ICommand
@@ -11,6 +13,10 @@ public class DevolverCommand : ICommand
     }
     public void Execute(out string output)
     {
-        output = "Devolvendo livros";
+        Repository repo = Repository.Instancia;
+        Usuario usuario = repo.BuscarUsuarioPorCodigo(_codigoUsuario);
+        Livro livro = repo.BuscarLivroPorCodigo(_codigoLivro);
+
+        usuario.DevolverLivro(livro, out output);
     }
 }
