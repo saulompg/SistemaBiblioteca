@@ -1,4 +1,4 @@
-﻿namespace ProjetoBiblioteca.entidade
+﻿namespace SistemaBiblioteca.entidade
 {
     public class Emprestimo
     {
@@ -13,6 +13,8 @@
             Exemplar = exemplar;
             DataEmprestimo = DateTime.Now;
             DataDevolucao = DataEmprestimo.AddDays(Usuario.PrazoEmprestimo);
+            
+            Usuario.AdicionarEmprestimo(this);
         }
 
         public void DevolverExemplar() => Exemplar.Devolver();

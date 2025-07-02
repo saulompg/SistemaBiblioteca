@@ -1,4 +1,4 @@
-﻿namespace ProjetoBiblioteca.entidade
+﻿namespace SistemaBiblioteca.entidade
 {
     public class Reserva
     {
@@ -11,6 +11,12 @@
             Usuario = usuario;
             Livro = livro;
             DataReserva = DateTime.Now;
+        }
+
+        public void CancelarReserva()
+        {
+            Usuario.Reservas.Remove(this);
+            Livro.Reservas.Remove(this);
         }
     }
 }

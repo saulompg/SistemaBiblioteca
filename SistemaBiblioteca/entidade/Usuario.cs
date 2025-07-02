@@ -1,6 +1,6 @@
-﻿using ProjetoBiblioteca.strategy;
+﻿using SistemaBiblioteca.strategy;
 
-namespace ProjetoBiblioteca.entidade
+namespace SistemaBiblioteca.entidade
 {
     public abstract class Usuario
     {
@@ -20,18 +20,24 @@ namespace ProjetoBiblioteca.entidade
             EmprestimosPassados = [];
             Reservas = [];
         }
+
         public void AdicionarEmprestimo(Emprestimo emprestimo)
         {
-            Reserva? reserva = Reservas.FirstOrDefault(r => r.Livro == emprestimo.Exemplar.Livro);
-            if (reserva != null) Reservas.Remove(reserva);
+            Reservas.FirstOrDefault(r => r.Livro == emprestimo.Exemplar.Livro)?.CancelarReserva();
             EmprestimosAtuais.Add(emprestimo);
         }
 
-        public void ReservarLivro(Livro livro)
+        public void ReservarLivro(Livro livro, out string output)
         {
+            if (Reservas.Exists(r => r.Livro.Titulo == livro.Titulo))
+            {
+                output = $"O Usuário já possui reserva para este Livro";
+                return;
+            }
             Reserva reserva = new Reserva(this, livro);
             livro.Reservas.Add(reserva);
             Reservas.Add(reserva);
+            output = $"O Livro '{reserva.Livro.Titulo}' foi reservado por {reserva.Usuario.Nome}";
         }
 
         public void DevolverLivro(Livro livro, out string output)
@@ -46,6 +52,13 @@ namespace ProjetoBiblioteca.entidade
             EmprestimosAtuais.Remove(emprestimo);
             EmprestimosPassados.Add(emprestimo);
             output = $"O Livro '{livro.Titulo}' foi devolvido por {Nome}";
+        }
+
+        public string GerarResumo()
+        {
+            string output = "";
+
+            return output;
         }
     }
 }
