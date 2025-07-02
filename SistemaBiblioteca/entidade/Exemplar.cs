@@ -1,6 +1,6 @@
-﻿using ProjetoBiblioteca.entidade;
+﻿using SistemaBiblioteca.entidade;
 
-namespace ProjetoBiblioteca.entidade
+namespace SistemaBiblioteca.entidade
 {
     public class Exemplar
     {
@@ -17,14 +17,29 @@ namespace ProjetoBiblioteca.entidade
 
         public void Emprestar(Usuario usuario)
         {
-            Emprestimo emprestimo = new Emprestimo(usuario, this);
-            usuario.AdicionarEmprestimo(emprestimo);
+            Emprestimo = new Emprestimo(usuario, this);
             Disponivel = false;
         }
 
         public void Devolver()
         {
+            Emprestimo = null;
             Disponivel = true;
+        }
+
+        public string GerarResumo()
+        {
+            string status = Disponivel ? "Disponível" : "Emprestado";
+            string output = $"- Exemplar {Codigo}: {status}\n";
+
+            if (!Disponivel)
+            {
+                output += $"\t- Usuario: {Emprestimo?.Usuario.Nome}\n";
+                output += $"\t- Empréstimo: {Emprestimo?.DataEmprestimo:dd/MM/yyyy}\n";
+                output += $"\t- Devolução Prevista: {Emprestimo?.DataDevolucao:dd/MM/yyyy}\n";
+            }
+
+            return output;
         }
     }
 }

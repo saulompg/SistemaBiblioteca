@@ -1,9 +1,10 @@
-using ProjetoBiblioteca.entidade;
+using SistemaBiblioteca.entidade;
 
-namespace ProjetoBiblioteca.command;
+namespace SistemaBiblioteca.command;
 
 public class ConsultarLivroCommand : ICommand
 {
+    private readonly Repository _repo = Repository.Instancia;
     private string _codigoLivro;
     public ConsultarLivroCommand(string codigoLivro)
     {
@@ -11,8 +12,7 @@ public class ConsultarLivroCommand : ICommand
     }
     public void Execute(out string output)
     {
-        Repository repo = Repository.Instancia;
-        Livro livro = repo.BuscarLivroPorCodigo(_codigoLivro);
-        output = livro.Titulo;
+        Livro livro = _repo.BuscarLivroPorCodigo(_codigoLivro);
+        output = livro.GerarResumo();
     }
 }

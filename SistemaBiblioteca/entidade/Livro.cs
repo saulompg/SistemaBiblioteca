@@ -1,8 +1,8 @@
-﻿using ProjetoBiblioteca.entidade;
+﻿using SistemaBiblioteca.observer;
 
-namespace ProjetoBiblioteca.entidade
+namespace SistemaBiblioteca.entidade
 {
-    public class Livro
+    public class Livro : Topico
     {
         public string Codigo { get; }
         public string Titulo { get; }
@@ -32,5 +32,38 @@ namespace ProjetoBiblioteca.entidade
             return Exemplares.FirstOrDefault(exemplar => exemplar.Disponivel);
         }
 
+        public void VerificarReservas()
+        {
+            if (Reservas.Count > 2)
+                NotificarObservadores(this);
+        }
+
+        public string GerarResumo()
+        {
+            // (i) Título
+            string output = $"Livro: {Titulo}\n";
+
+            // (ii) Reservas
+            int qtdReservas = Reservas.Count;
+            output += $"Reservas: {qtdReservas}\n";
+
+            if (qtdReservas > 0)
+            {
+                output += $"Usuários com reservas:\n";
+                foreach (var reservas in Reservas)
+                {
+                    output += $"- {reservas.Usuario.Nome}\n";
+                }
+            }
+
+            // (iii) Exemplares
+            output += $"Exemplares:\n";
+            foreach (var exemplar in Exemplares)
+            {
+                output += exemplar.GerarResumo();
+            }
+
+            return output;
+        }
     }
 }
