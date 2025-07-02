@@ -1,4 +1,7 @@
-namespace ProjetoBiblioteca.command;
+using SistemaBiblioteca.entidade;
+using SistemaBiblioteca.observer;
+
+namespace SistemaBiblioteca.command;
 
 public class ObservarCommand : ICommand
 {
@@ -11,6 +14,17 @@ public class ObservarCommand : ICommand
     }
     public void Execute(out string output)
     {
-        output = "Cadastrado como observador";
+        Repository repo = Repository.Instancia;
+        Usuario usuario = repo.BuscarUsuarioPorCodigo(_codigoUsuario);
+        Livro livro = repo.BuscarLivroPorCodigo(_codigoLivro);
+
+        if (usuario is not IObservador)
+        {
+            output = "Este usuário não tem permissão para ser observador";
+            return;
+        }
+
+        livro.AdicionarObservador((IObservador) usuario);
+        output = $"{usuario.Nome} agora está observando o livro '{livro.Titulo}'";
     }
 }
