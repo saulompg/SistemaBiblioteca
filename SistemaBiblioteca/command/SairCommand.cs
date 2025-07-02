@@ -11,6 +11,6 @@ public class SairCommand : ICommand
     public void Execute(out string output)
     {
         output = "Encerrando o Programa...";
-        _sair.Invoke();
+        _sair();
     }
 }

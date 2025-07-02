@@ -4,6 +4,7 @@ namespace ProjetoBiblioteca.command;
 
 public class ReservarCommand : ICommand
 {
+    private readonly Repository _repo = Repository.Instancia;
     private string _codigoUsuario;
     private string _codigoLivro;
     public ReservarCommand(string codigoUsuario, string codigoLivro)
@@ -13,10 +14,8 @@ public class ReservarCommand : ICommand
     }
     public void Execute(out string output)
     {
-        Repository repo = Repository.Instancia;
-        Usuario usuario = repo.BuscarUsuarioPorCodigo(_codigoUsuario);
-        Livro livro = repo.BuscarLivroPorCodigo(_codigoLivro);
-        
+        Usuario usuario = _repo.BuscarUsuarioPorCodigo(_codigoUsuario);
+        Livro livro = _repo.BuscarLivroPorCodigo(_codigoLivro);
         usuario.ReservarLivro(livro);
         output = $"O Livro '{livro.Titulo}' foi reservado por {usuario.Nome}";
     }

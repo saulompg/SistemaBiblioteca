@@ -5,6 +5,7 @@ namespace SistemaBiblioteca.command;
 
 public class ObservarCommand : ICommand
 {
+    private readonly Repository _repo = Repository.Instancia;
     private string _codigoUsuario;
     private string _codigoLivro;
     public ObservarCommand(string codigoUsuario, string codigoLivro)
@@ -14,9 +15,8 @@ public class ObservarCommand : ICommand
     }
     public void Execute(out string output)
     {
-        Repository repo = Repository.Instancia;
-        Usuario usuario = repo.BuscarUsuarioPorCodigo(_codigoUsuario);
-        Livro livro = repo.BuscarLivroPorCodigo(_codigoLivro);
+        Usuario usuario = _repo.BuscarUsuarioPorCodigo(_codigoUsuario);
+        Livro livro = _repo.BuscarLivroPorCodigo(_codigoLivro);
 
         if (usuario is not IObservador)
         {
