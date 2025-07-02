@@ -1,6 +1,6 @@
-﻿using ProjetoBiblioteca.entidade;
+﻿using SistemaBiblioteca.entidade;
 
-namespace ProjetoBiblioteca
+namespace SistemaBiblioteca
 {
     public class Repository
     {
