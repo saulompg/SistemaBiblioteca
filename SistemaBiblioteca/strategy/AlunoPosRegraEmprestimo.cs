@@ -1,4 +1,4 @@
-namespace ProjetoBiblioteca.strategy;
+namespace SistemaBiblioteca.strategy;
 
 internal class AlunoPosRegraEmprestimo : AlunoRegraEmprestimo
 {

@@ -1,29 +1,29 @@
-using ProjetoBiblioteca.entidade;
+using SistemaBiblioteca.entidade;
 
-namespace ProjetoBiblioteca.strategy;
+namespace SistemaBiblioteca.strategy;
 
 internal class ProfessorRegraEmprestimo : IRegraEmprestimoStrategy
 {
-    public bool Verificar(Usuario usuario, Livro livro, out string motivo)
+    public void Verificar(Usuario usuario, Livro livro, out string motivo)
     {
         // 1. Verifica se há exemplares disponíveis na biblioteca
         Exemplar? exemplar = livro.BuscaExemplarDisponivel();
         if (exemplar == null)
         {
             motivo = "Não foi possível realizar o empréstimo, não há exemplares disponíveis.";
-            return false;
+            return;
         }
         
         // 2. Verifica se há empréstimos em atraso
         if (usuario.EmprestimosAtuais.Exists(e => e.DataDevolucao < DateTime.Today && !e.Exemplar.Disponivel))
         {
             motivo = "Não foi possível realizar o empréstimo, existem emprestimos em atrazo.";
-            return false;
+            return;
         }
         
         // Empréstimo concluído 
-        motivo = $"O livro '{livro.Titulo}' foi emprestado a {usuario.Nome}";
         exemplar.Emprestar(usuario);
-        return true;
+        motivo = $"O livro '{livro.Titulo}' foi emprestado a {usuario.Nome}";
+        return;
     }
 }

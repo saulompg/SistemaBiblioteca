@@ -1,4 +1,4 @@
-namespace ProjetoBiblioteca.command;
+namespace SistemaBiblioteca.command;
 
 public interface ICommand
 {

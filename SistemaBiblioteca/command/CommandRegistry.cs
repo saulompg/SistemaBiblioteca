@@ -1,6 +1,6 @@
-using ProjetoBiblioteca.factory;
+using SistemaBiblioteca.factory;
 
-namespace ProjetoBiblioteca.command;
+namespace SistemaBiblioteca.command;
 
 public class CommandRegistry
 {

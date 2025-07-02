@@ -1,8 +1,8 @@
-using ProjetoBiblioteca.entidade;
+using SistemaBiblioteca.entidade;
 
-namespace ProjetoBiblioteca.strategy;
+namespace SistemaBiblioteca.strategy;
 
 public interface IRegraEmprestimoStrategy
 {
-    public bool Verificar(Usuario usuario, Livro livro, out string motivo);
+    public void Verificar(Usuario usuario, Livro livro, out string motivo);
 }

@@ -1,6 +1,6 @@
-using ProjetoBiblioteca.entidade;
+using SistemaBiblioteca.entidade;
 
-namespace ProjetoBiblioteca.command;
+namespace SistemaBiblioteca.command;
 
 public class ConsultarUsuarioCommand : ICommand
 {

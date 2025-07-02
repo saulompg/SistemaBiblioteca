@@ -1,6 +1,6 @@
-using ProjetoBiblioteca.command;
+using SistemaBiblioteca.command;
 
-namespace ProjetoBiblioteca.factory;
+namespace SistemaBiblioteca.factory;
 
 internal class ConsultarUsuarioCommandFactory : ICommandFactory
 {

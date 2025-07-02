@@ -1,6 +1,6 @@
-﻿using ProjetoBiblioteca.strategy;
+﻿using SistemaBiblioteca.strategy;
 
-namespace ProjetoBiblioteca.entidade
+namespace SistemaBiblioteca.entidade
 {
     internal class AlunoPosGraduacao : Usuario
     {
