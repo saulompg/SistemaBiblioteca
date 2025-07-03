@@ -58,6 +58,8 @@ namespace SistemaBiblioteca.entidade
 
             // (iii) Exemplares
             output += $"Exemplares:\n";
+            if (Exemplares.Count == 0)
+                output += "  - Não há exemplares deste livro em nossa Biblioteca.\n";
             foreach (var exemplar in Exemplares)
             {
                 output += exemplar.GerarResumo();
