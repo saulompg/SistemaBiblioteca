@@ -17,7 +17,7 @@ internal abstract class AlunoRegraEmprestimo : IRegraEmprestimoStrategy
         }
         
         // 2. Verifica se há empréstimos em atraso
-        if (usuario.EmprestimosAtuais.Exists(e => e.DataDevolucao < DateTime.Today && !e.Exemplar.Disponivel))
+        if (usuario.EmprestimosAtuais.Exists(e => e.DataDevolucaoPrevista < DateTime.Today && !e.Exemplar.Disponivel))
         {
             motivo = "Não foi possível realizar o empréstimo, existem emprestimos em atrazo.";
             return;

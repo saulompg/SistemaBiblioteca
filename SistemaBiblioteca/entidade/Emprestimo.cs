@@ -5,18 +5,23 @@
         public Usuario Usuario { get; }
         public Exemplar Exemplar { get; }
         public DateTime DataEmprestimo { get; }
-        public DateTime DataDevolucao { get; }
+        public DateTime DataDevolucaoPrevista { get; }
+        public DateTime DataDevolucao { get; private set; }
 
         public Emprestimo( Usuario usuario, Exemplar exemplar)
         {
             Usuario = usuario;
             Exemplar = exemplar;
             DataEmprestimo = DateTime.Now;
-            DataDevolucao = DataEmprestimo.AddDays(Usuario.PrazoEmprestimo);
+            DataDevolucaoPrevista = DataEmprestimo.AddDays(Usuario.PrazoEmprestimo);
             
             Usuario.AdicionarEmprestimo(this);
         }
 
-        public void DevolverExemplar() => Exemplar.Devolver();
+        public void DevolverExemplar()
+        {
+            DataDevolucao = DateTime.Now;
+            Exemplar.Devolver();
+        }
     }
 }

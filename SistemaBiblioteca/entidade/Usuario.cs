@@ -56,7 +56,37 @@ namespace SistemaBiblioteca.entidade
 
         public string GerarResumo()
         {
-            string output = "";
+            string output = $"Usuário: {Nome}\n";
+
+            output += "Empréstimos:\n";
+            if (EmprestimosAtuais.Count == 0 && EmprestimosPassados.Count == 0)
+            {
+                output += $"  - O usuário nunca realizou empréstimos.\n";
+            }
+            foreach (var emprestimo in EmprestimosAtuais)
+            {
+                output += $"  - '{emprestimo.Exemplar.Livro.Titulo}' | Status: Em curso\n";
+                output += $"    Data do Empréstimo: {emprestimo.DataEmprestimo:dd/MM/yyyy}\n";
+                output += $"    Devolução prevista: {emprestimo.DataDevolucaoPrevista:dd/MM/yyyy}\n";
+            }
+
+            foreach (var emprestimo in EmprestimosPassados)
+            {
+                output += $"  - '{emprestimo.Exemplar.Livro.Titulo}' | Status: Finalizado\n";
+                output += $"    Data do Empréstimo: {emprestimo.DataEmprestimo:dd/MM/yyyy}\n";
+                output += $"    Devolvido em: {emprestimo.DataDevolucao:dd/MM/yyyy}\n";
+            }
+
+            output += $"Reservas:\n";
+            if (Reservas.Count == 0)
+            {
+                output += $"  - O usuário não possui reservas.\n";
+            }
+            foreach (var reserva in Reservas)
+            {
+                output += $"  - '{reserva.Livro.Titulo}'\n";
+                output += $"    Realizada em: {reserva.DataReserva:dd/MM/yyyy}\n";
+            }
 
             return output;
         }
