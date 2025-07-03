@@ -2,15 +2,15 @@ namespace SistemaBiblioteca.command;
 
 public class SairCommand : ICommand
 {
-    private readonly Action _encerrarSistema;
+    private readonly Action _sair;
 
-    public SairCommand(Action encerrarSistema)
+    public SairCommand(Action sair)
     {
-        _encerrarSistema = encerrarSistema;
+        _sair = sair;
     }
     public void Execute(out string output)
     {
         output = "Encerrando o Programa...";
-        _encerrarSistema();
+        _sair();
     }
 }
